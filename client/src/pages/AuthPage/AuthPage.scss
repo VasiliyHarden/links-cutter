@@ -1,0 +1,68 @@
+@import '../../styles/settings';
+
+.login-page {
+  left: 50%;
+  margin-left: -15rem;
+  position: absolute;
+  top: 5rem;
+  width: 30rem;
+}
+
+.login-page__title {
+  margin: 0 0 3rem;
+}
+
+.login-page__form {
+  background-color: $secondary-color;
+  padding: 2rem;
+}
+
+.login-page__form-title {
+  margin: 0 0 1rem;
+}
+
+.login-page__input {
+  background-color: $main-color;
+  border: 0;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+  color: $text-color;
+  display: block;
+  font-size: 1rem;
+  margin: 0.3rem 0;
+  padding: 0.5rem 0.8rem;
+  transition: background-color $transition-time ease-in-out;
+  width: 100%;
+
+  &:focus {
+    background-color: lighten($secondary-color, 10%);
+    outline: 0;
+  }
+
+  &::placeholder {
+    color: lighten($text-color, 30%);
+  }
+}
+
+.login-page__btn {
+  background-color: darken($accent-color, 20%);
+  border: 0;
+  border-radius: 0.3rem;
+  color: $main-color;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 1rem 0.5rem 0 0;
+  padding: 0.5rem 1rem;
+
+  &:hover {
+    background-color: darken($accent-color, 30%);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px $transparent-secondary-color;
+    background-color: darken($accent-color, 30%);
+  }
+}
