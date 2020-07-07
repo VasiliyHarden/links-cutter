@@ -1,0 +1,42 @@
+@import '../../styles/settings';
+
+$navbar-height: 3.5rem;
+
+.navbar {
+  background-color: $secondary-color;
+  display: flex;
+  height: $navbar-height;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 0 0 1rem;
+}
+
+.navbar__header {
+  margin: 0;
+}
+
+.navbar__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__list-item {
+  display: inline-block;
+  height: $navbar-height;
+}
+
+.navbar__link {
+  color: $text-color;
+  display: block;
+  line-height: $navbar-height;
+  text-align: center;
+  text-decoration: none;
+  width: 6rem;
+
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
+}

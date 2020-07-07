@@ -4,10 +4,12 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "cross-env NODE_ENV=production node app.js",
     "server": "nodemon app.js",
     "client": "yarn --cwd ./client/ start",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "client:install": "yarn --cwd ./client/ install",
+    "client:build": "yarn --cwd ./client/ build",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Vasiliy Muzyrev <vasilii.muzyrev@gmail.com>",
   "license": "ISC",
@@ -17,10 +19,12 @@
     "express": "^4.17.1",
     "express-validator": "^6.6.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.20"
+    "mongoose": "^5.9.20",
+    "shortid": "^2.2.15"
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
+    "cross-env": "^7.0.2",
     "nodemon": "^2.0.4"
   }
 }

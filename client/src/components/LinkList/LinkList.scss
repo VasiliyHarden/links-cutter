@@ -1,0 +1,32 @@
+@import '../../styles/settings';
+
+.link-list {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.link-list__header {
+
+}
+
+.link-list__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.link-list__cell {
+  border-bottom: 1px solid lighten($text-color, 50%);
+  padding: 1rem;
+  text-align: center;
+  word-break: break-all;
+}
+
+.link-list__link {
+  color: darken($secondary-color, 10%);
+  text-decoration: none;
+
+  &:hover {
+    color: darken($secondary-color, 20%);
+  }  
+}

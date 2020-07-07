@@ -1,0 +1,29 @@
+@import '../../styles/settings';
+
+.create-page {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.create-page__input {
+  background-color: darken($main-color, 3%);
+  border: 0;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+  color: $text-color;
+  display: block;
+  font-size: 1rem;
+  margin: 3rem 0;
+  padding: 0.5rem 0.8rem;
+  transition: background-color $transition-time ease-in-out;
+  width: 100%;
+
+  &:focus {
+    background-color: lighten($secondary-color, 10%);
+    outline: 0;
+  }
+
+  &::placeholder {
+    color: lighten($text-color, 30%);
+  }
+}

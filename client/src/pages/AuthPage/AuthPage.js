@@ -51,6 +51,7 @@ const AuthPage = () => {
           name='email' 
           placeholder='Albert Einstein'
           className='login-page__input'
+          value={ form.email }
           onChange={ changeHandler }
         />
         <label htmlFor='password'>Password:</label>
@@ -59,6 +60,7 @@ const AuthPage = () => {
           id='password' 
           name='password'
           className='login-page__input'
+          value={ form.password }
           onChange={ changeHandler } 
         />
         <button 
